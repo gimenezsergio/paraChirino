@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="publico/login.css" rel="stylesheet" />
+        <script defer src="publico/access.js"></script>
+    </head>
+    <body>
+
+        <div class="login-page">
+            <img src="publico/medical-logo.jpg" width="200"/>
+            <div class="form">
+                <div class="register-form" id="register-userPnl">
+                    <input type="text" placeholder="name" id="userRegister"/>
+                    <input type="password" placeholder="password" id="passwordRegister"/>
+                    <input type="text" placeholder="email address" id="emailRegister"/>
+                    <button id="registerBtn">Registrarse</button>
+                    
+                    <p class="message">Registrado? <a id="login-user">Ingresar</a></p>
+                </div>
+                <form class="login-form" id="login-userPnl" action="Login" method="get">
+                    <input type="text" placeholder="username" name="username"/>
+                    <input type="password" placeholder="password" name="password"/>
+                    
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" id="btnVerificar" >Entrar</button>
+                    <p class="message">¿No registrado? <a id="register-user">Crear una cuenta</a></p>
+                </form>
+                <div id="serverMsg"></div>
+                <div id="OkMsg"></div>
+            </div>
+        </div>
+    </body>
+</html>

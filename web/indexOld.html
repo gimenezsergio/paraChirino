@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reserva de turno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/stylesOld.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h2>Reserva de turnos</h2>
+            
+        </header>
+        <section class="wrapper">
+            <article>
+                <img src="https://www.themarquishall.com/wp-content/uploads/2016/07/event-icon-dsbr.png">
+            </article>
+            <article id="calendario">
+                <h3>Reservar</h3>
+                <input type="date" id="fecha"/>
+                <button id="reservarBtn">Reservar</button>
+            </article>
+            <article>
+                <h3>Mis Reservas</h3>
+                <button id="consultaBtn">Consultar</button>
+                <div id="turnosReservados"></div>
+            </article>
+            <article>
+                <h3>Mis Grillas</h3>
+                <button id="GrillasBtn">Consultar</button>
+                <div id="grilla"></div>
+            </article>
+            
+        </section>
+        <footer>
+            <div id="panelMensajes"></div>
+        </footer>
+        <script src="js/turnos.js"></script>
+    </body>
+</html>

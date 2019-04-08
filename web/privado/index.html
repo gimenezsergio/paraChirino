@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Gestión médica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="js/util/templating.js"></script>
+        <script src="js/turnos.js" defer></script>
+    </head>
+    <body>
+        <main class="wrapper">
+            <section template="perfil.html" id="perfilTpl" class="hide templatePnl"></section>
+            <section template="grillas.html" id="grillasTpl" class="hide templatePnl"></section>
+            <section template="calendario.html" id="calendarioTpl" class="templatePnl"></section>
+            <section template="turnos.html" id="turnosTpl" class="hide templatePnl"></section>
+            
+            <aside>
+                <div class="logo">Gestion de Medicos</div>
+                <div class="avatar">
+                    <div class="avatar__img">
+                        <img src="img/avatar_medic.jpeg" width=100px alt="avatar" />
+                    </div>
+                    <div class="avatar__name" id="nombreUserAside">Gerente General</div>
+                    <div class="logout" id="logout2"><a href="/Turnos/Logout">Logout</a></div>
+                </div>
+                <nav class="menu">
+                    <a class="menu__item" href="javascript://" id="perfilMenuItem">
+                        <i class="menu__icon fa fa-home"></i>
+                        <span class="menu__text">Perfil</span>
+                    </a>
+                    <a class="menu__item" href="javascript://" id="turnosMenuItem">
+                        <i class="menu__icon fa fa-envelope"></i>
+                        <span class="menu__text">Turnos</span>
+                    </a>
+                    <a class="menu__item" href="javascript://">
+                        <i class="menu__icon fa fa-list"></i>
+                        <span class="menu__text">Obras Sociales</span>
+                    </a>
+                    <a class="menu__item menu__item--active" href="javascript://" id="calendarioMenuItem">
+                        <i class="menu__icon fa fa-calendar"></i>
+                        <span class="menu__text">Calendario</span>
+                    </a>
+                    <a class="menu__item" href="javascript://">
+                        <i class="menu__icon fa fa-bar-chart"></i>
+                        <span class="menu__text">Facturacion</span>
+                    </a>
+                    <a class="menu__item" href="javascript://">
+                        <i class="menu__icon fa fa-trophy"></i>
+                        <span class="menu__text">HC</span>
+                    </a>
+                    <a class="menu__item" href="javascript://" id="grillasMenuItem">
+                        <i class="menu__icon fa fa-sliders"></i>
+                        <span class="menu__text">Grillas</span>
+                    </a>
+                </nav>
+                <div class="copyright">copyright &copy; 2018</div>
+            </aside>
+            
+        </main>
+
+        
+        <script defer >includeHTML();</script>
+    </body>
+</html>
